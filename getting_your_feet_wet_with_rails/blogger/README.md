@@ -1,4 +1,4 @@
-Project: Getting Your Feet Wet With Rails
+Project: Getting Your Feet Wet With Rails (Blogger)
 
 Link: http://www.theodinproject.com/ruby-on-rails/getting-your-feet-wet
 
