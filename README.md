@@ -6,7 +6,7 @@ Description: In this course, you'll be doing a whole lot of building, each proje
 
 List of Projects:
 * Getting Your Feet Wet With Rails (Blogger)
-* HTML Forms (with Mint)
+* Micro-Reddit
 * Positioning Elements (with the New York Times)
 * Backgrounds and Gradients (with Apple)
 * Responsive Design (with The Next Web)
