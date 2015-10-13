@@ -8,6 +8,8 @@ List of Projects:
 * Getting Your Feet Wet With Rails (Blogger)
 * Micro-Reddit
 * Rest Tester
+* Re-Former
+* Members Only
 * Private Events
 * Odin-Kittens
 * Odin Flight Booker
