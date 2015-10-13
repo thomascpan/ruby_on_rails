@@ -11,8 +11,6 @@ List of Projects:
 * Private Events
 * Odin-Kittens
 * Odin Flight Booker
-* Using Twitter Bootstrap (with Newsweek)
-* Design your Own Grid-Based Framework (with Bootstrap)
 
 Note: Some larger projects are excluded from this repository and may be hosted seperately. 
 
