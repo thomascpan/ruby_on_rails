@@ -8,7 +8,7 @@ List of Projects:
 * Getting Your Feet Wet With Rails (Blogger)
 * Micro-Reddit
 * Rest Tester
-* Backgrounds and Gradients (with Apple)
+* Private Events
 * Responsive Design (with The Next Web)
 * Using Twitter Bootstrap (with Newsweek)
 * Design your Own Grid-Based Framework (with Bootstrap)

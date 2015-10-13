@@ -1,0 +1,63 @@
+<% provide(:title, @user.name) %>
+
+<div class="row">
+  <section>
+    <h1>
+      <%= @user.name %>
+    </h1>
+
+    <div>
+      <h3>Upcoming Events</h3>
+      <table class="table">
+      	<th>Event</th>
+      	<th>Location</th>
+      	<th>Description</th>
+      	<th>Date</th>
+  			<% @user.upcoming_events.each do |e| %>	      	
+  		    <tr>
+  		    	<td><%= link_to e.title, e %></td>	
+  		    	<td><%= e.location %></td>				    
+  		    	<td><%= e.description %></td>		 
+  		    	<td><%= e.date %></td>	
+  	    	</tr>
+      	<% end %>
+      </table>
+    </div>
+
+    <div>
+      <h3>Past Events</h3>
+      <table class="table">
+        <th>Event</th>
+        <th>Location</th>
+        <th>Description</th>
+        <th>Date</th>
+        <% @user.past_events.each do |e| %>         
+          <tr>
+            <td><%= link_to e.title, e %></td>  
+            <td><%= e.location %></td>            
+            <td><%= e.description %></td>    
+            <td><%= e.date %></td>  
+          </tr>
+        <% end %>
+      </table>
+    </div>    
+
+    <div>
+      <h3>Created Events</h3>
+      <table class="table">
+        <th>Event</th>
+        <th>Location</th>
+        <th>Description</th>
+        <th>Date</th>
+        <% @user.created_events.each do |e| %>          
+          <tr>
+            <td><%= link_to e.title, e %></td>  
+            <td><%= e.location %></td>            
+            <td><%= e.description %></td>    
+            <td><%= e.date %></td>  
+          </tr>
+        <% end %>
+      </table>
+    </div>    
+  </section>
+</div>

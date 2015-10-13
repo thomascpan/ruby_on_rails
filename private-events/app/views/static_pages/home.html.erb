@@ -1,0 +1,15 @@
+<% if logged_in? %>
+	<div class="center jumbotron">
+	  <h1>Private-Events</h1>
+
+	  <%= link_to "Create New Event", new_event_path, class: "btn btn-lg btn-primary" %>
+	</div>
+<% else %>
+	<div class="center jumbotron">
+	  <h1>Private-Events</h1>
+
+	  <h2>Plan or join an event now!</h2>
+
+	  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+	</div>
+<% end %>	            

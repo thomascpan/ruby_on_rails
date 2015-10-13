@@ -1,0 +1,26 @@
+<% provide(:title, @event.title) %>
+
+<div class="col-md-6 col-md-offset-3">
+  <div>
+  	<h1><%= @event.title %></h1>
+
+    <%= render 'attend_form' %><br>
+  	
+    <h3>Host</h3>
+      <p><%= @event.creator.name %></p>
+  	<h3>Location</h3>
+  		<p><%= @event.location %></p>
+  	<h3>Description</h3>
+  		<p><%= @event.description %></p>
+  	<h3>Date</h3>
+  		<p><%= @event.date %></p>
+    <h3>Attending</h3>
+      <ol>
+      <% @event.attendees.each do |a| %>
+        <% if a != @event.creator %>
+          <li><%= a.name %></li>
+        <% end %>
+      <% end %>
+      </ol>
+  </div>
+</div>
