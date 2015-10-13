@@ -1,0 +1,10 @@
+<% provide(:title, "New Post") %>
+
+<div>
+	<%= form_for @post do |f| %>
+		<%= f.label :body %>
+		<%= f.text_area :body %>
+
+		<%= f.submit "Create post" %>
+	<% end %>
+</div>
