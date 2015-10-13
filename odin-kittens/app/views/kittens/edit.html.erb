@@ -1,0 +1,21 @@
+<h1>Change Kitten Info</h1>
+
+<div>
+	<%= form_for(@kitten) do |f| %>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+
+		<%= f.label :age %>
+		<%= f.text_field :age %>
+
+		<%= f.label :cuteness %>
+		<%= f.text_field :cuteness %>
+
+		<%= f.label :softness %>
+		<%= f.text_field :softness %>
+
+		<%= f.submit("Submit") %>		
+	<% end %>
+<%= link_to("Delete", @kitten, method: :delete,
+																data: { confirm: "You sure?" }) %>
+</div>

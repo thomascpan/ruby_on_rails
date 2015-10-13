@@ -9,6 +9,7 @@ List of Projects:
 * Micro-Reddit
 * Rest Tester
 * Private Events
+* Odin-Kittens
 * Odin Flight Booker
 * Using Twitter Bootstrap (with Newsweek)
 * Design your Own Grid-Based Framework (with Bootstrap)
