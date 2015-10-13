@@ -1,0 +1,20 @@
+<%= provide(:title, "Confirmation") %>
+<h1>Booking Confirmation</h1>
+
+<div>
+	<p>Thank you for booking your flight with odin-flight-booker. Your confirmations # is <strong><%= @booking.id %></strong>.</p>
+	<p>
+		Flight #
+		<%= @booking.flight.id %> 
+		<%= @booking.flight.from_airport.code %> -> <%= @booking.flight.to_airport.code %> 
+		on <%= @booking.flight.date.strftime("%l:%M %p - %A, %B %d, %Y") %>.
+	</p>
+
+	<p>Passengers:</p>
+
+	<ol>
+		<% @booking.passengers.each do |p| %>
+			<li><%= "#{p.name} <#{p.email}>" %></li>
+		<% end %>
+	</ol>
+</div>

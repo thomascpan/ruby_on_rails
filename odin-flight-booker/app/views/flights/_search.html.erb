@@ -1,0 +1,9 @@
+<div>
+	<%= form_tag(flights_path, method: "get") do %>
+		<%= select_tag(:from_airport_id, options_for_select(@airports), prompt: "From") %>
+		<%= select_tag(:to_airport_id, options_for_select(@airports), prompt: "To") %>
+		<%= select_tag(:date, options_for_select(@dates), prompt: "Date") %>
+		<%= select_tag(:passengers, options_for_select(@passengers), prompt: "Passengers") %>
+		<%= submit_tag("Search") %>
+	<% end %>
+</div>
